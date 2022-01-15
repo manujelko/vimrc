@@ -12,7 +12,6 @@ function! PackInit() abort
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
   call minpac#add('preservim/nerdtree')
-  call minpac#add('ryanoasis/vim-devicons')
   call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-commentary')
 
@@ -32,7 +31,7 @@ set number
 set hlsearch
 set incsearch
 set mouse=a
+set backspace=indent,eol,start
 syntax on
 set termguicolors
 colorscheme gotham
-
