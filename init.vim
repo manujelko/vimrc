@@ -3,6 +3,8 @@
 set nocompatible
 filetype plugin indent on
 
+let mapleader=" "
+
 function! PackInit() abort
   packadd minpac
 
@@ -22,7 +24,10 @@ command! PackClean  call PackInit() | call minpac#clean()
 command! PackStatus packadd minpac | call minpac#status()
 
 let g:airline_theme='gotham'
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+
+" TAG JUMPING
+command! MakeTags !ctags -R .
 
 set encoding=UTF-8
 set path+=**
