@@ -25,6 +25,7 @@ command! PackStatus packadd minpac | call minpac#status()
 
 let g:airline_theme='gotham'
 nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>r :NERDTreeRefreshRoot<CR>
 
 " TAG JUMPING
 command! MakeTags !ctags -R .
