@@ -34,6 +34,7 @@ set encoding=UTF-8
 set path+=**
 set wildmenu
 set number
+set relativenumber
 set hlsearch
 set incsearch
 set mouse=a
