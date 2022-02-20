@@ -21,7 +21,7 @@ then
         mkdir $HOME/.config/nvim
     fi
     ln -s `pwd`/init.vim ~/.config/nvim/init.vim
-    ln -s `pwd`/vim/ftplugin ~/.config/nvim/ftplugin/
+    ln -s `pwd`/vim/ftplugin ~/.config/nvim/ftplugin
     git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac
 else
     echo "Supply vim or nvim as argument!"
