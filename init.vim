@@ -10,7 +10,7 @@ function! PackInit() abort
 
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
-  call minpac#add('whatyouhide/vim-gotham')
+  call minpac#add('morhetz/gruvbox')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
   call minpac#add('preservim/nerdtree')
@@ -23,7 +23,7 @@ command! PackUpdate call PackInit() | call minpac#update()
 command! PackClean  call PackInit() | call minpac#clean()
 command! PackStatus packadd minpac | call minpac#status()
 
-let g:airline_theme='gotham'
+let g:airline_theme='gruvbox'
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>r :NERDTreeRefreshRoot<CR>
 
@@ -41,4 +41,4 @@ set mouse=a
 set backspace=indent,eol,start
 syntax on
 set termguicolors
-colorscheme gotham
+colorscheme gruvbox
