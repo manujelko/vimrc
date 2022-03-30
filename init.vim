@@ -39,6 +39,7 @@ set hlsearch
 set incsearch
 set mouse=a
 set backspace=indent,eol,start
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 syntax on
 set termguicolors
 colorscheme gruvbox
